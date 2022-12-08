@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../reset.css">
 </head>
 <body>
 <div class="main">
     <div class="logo">todos</div>
-    <div class="eventBoard">
-        <div class="eventBlock">What's next?</div>
-        <div class="eventBlock"></div>
-        <div class="eventBlock"></div>
-    </div>
-    <div class="bottomBorder">
+    <div class="todoList">
         <div class="eventBlock">
-            <input type="text" onkeypress="onOneKeyPress()">
+            <h1>what to do next?</h1>
         </div>
-        <div class="showSelectClearItems"></div>
+
+
+        <div>
+            <p class="status-undone"></p>
+            <ul class="todo-list" id="todolist"></ul>
+        </div>
+        <div>
+            <p class="status"></p>
+            <ul class="todo-list archived" id="archived"></ul>
+        </div>
+
+
+        <div class="eventBlock">
+            <button id="btn-add">+</button>
+            <input id="add" type="text" >
+
+        </div>
+
+        <div class="showSelectClearItems">
+            <div >
+                <p class="unfinishedCount"></p>
+            </div>
+            <div class="middleSelect">
+                <span id="showAllItems">All</span>
+                <!--            <span id="showActiveItems">Active</span>-->
+                <!--            <span id="showCompletedItem">Completed</span>-->
+
+            </div>
+            <span id="clearAllCompleted">Clear Completed</span>
+        </div>
     </div>
 </div>
 
 
 </body>
-<script src="JsPractice.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="./index.js"></script>
 </html>
