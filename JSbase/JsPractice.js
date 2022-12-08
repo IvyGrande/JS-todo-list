@@ -102,3 +102,5 @@ function repeat(arr){
 }
 let noRepeat = repeat(arrList);
 console.log(noRepeat);
+
+const arrNew = arr.filter(i => i.status);
